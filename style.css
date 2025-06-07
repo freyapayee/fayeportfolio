@@ -350,10 +350,10 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-    width: 70%;
+    width: 80%;
     padding: 0.5rem;
     border: 1px solid #ccc;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 textarea {
