@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, ul, li {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: rgb(241, 223, 223);
+    line-height: 1.6;
+    font-size: 25px;
+}
+
+h2 {
+    font-family: 'Bungee', cursive;
+    text-align: center;
+    font-size: 75px;
+    color: rgb(85, 93, 80);
+}
+
+h3 {
+    font-family: 'Bungee', cursive;
+    color: rgb(244, 194, 194);
+}
+
+.social-media h3 {
+    color: rgb(85, 93, 80);
+}
+
+.skill-item p, ul {
+    color: rgb(210, 238, 158);
+}
+
+nav {
+    background-color: rgb(85, 93, 80);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+    box-shadow: 0 2px 8px rgb(165, 56, 96);
+    transition: max-height 0.5s ease;
+    position: relative;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-family: 'Bungee';
+}
+
+.menu-button {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-button span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.35rem 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgb(85, 93, 80);
+    box-shadow: 0 0 8px rgb(244, 194, 194);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 3rem 1.5rem;
+    background: rgb(241, 223, 223);
+    color: rgb(85, 93, 80);
+    box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.2);
+    flex-direction: column; 
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column; 
+}
+
+.faye-photo {
+    height: auto;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 50%;  
+    margin-bottom: 2rem;
+}
+
+.faye-photo:hover {
+    box-shadow: 0 0 15px rgb(178, 233, 214);
+}
+
+.header-text {
+    text-align: left;
+    width: 100%;
+}
+
+.subtitle {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Bungee', cursive;
+}
+
+.header-text h1 {
+    font-size: 75px !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    animation: grow-shrink 1.5s infinite;
+    font-family: 'Bungee', cursive;
+    text-align: center; 
+}
+
+@keyframes grow-shrink {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.header-text p {
+    font-size: 1.5rem; 
+}
+
+.section-title {
+    font-family: 'Bungee', cursive;
+    font-size: 3rem;
+    color: rgb(85, 93, 80);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    animation: grow-shrink 1s infinite;
+}
+
+main {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+main .section {
+    padding: 2rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease; 
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+main .section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+main .section.skills-appear {
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+main .section.skills-appear.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+main .section.experiences-appear {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+main .section.experiences-appear.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+main .section.contact-appear {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+main .section.contact-appear.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+main section:hover {
+    box-shadow: 0 0 15px rgb(85, 93, 80);
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+main section:active {
+    box-shadow: 0 0 20px rgb(85, 93, 80);
+}
+
+.social-media {
+    margin-top: 1.5rem;
+    color: rgb(85, 93, 80);
+    font-weight: bold;
+}
+
+.social-icon {
+    width: 50px;
+    height: auto;
+    margin-right: 1rem;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.skills-container, .experiences-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.skill-item {
+    background-color: rgb(51, 54, 49);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgb(85, 93, 80);
+}
+
+.skill-image {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 0.1rem;
+}
+
+.skill-item h3 {
+    font-size: 2rem;
+    color: rgb(244, 194, 194);
+    font-weight: 600;
+}
+
+.skill-item p {
+    font-size: 1.2rem;
+}
+
+.skill-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.skill-item ul li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item {
+    width: 75%; 
+    max-width: 600px; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    padding: 2rem;
+    color: rgb(55, 56, 40);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: scale(1.05);
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.experience-item:hover::before {
+    opacity: 1;
+}
+
+.experience-item h3,
+.experience-item p {
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.experience-item:hover h3,
+.experience-item:hover p {
+    color: rgb(210, 238, 158);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.1rem;
+    font-weight: bold;
+    color: rgb(85, 93, 80);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 45%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: rgb(85, 93, 80);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: rgb(23, 33, 16);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    color: rgb(85, 93, 80);
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu-button {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgb(85, 93, 80);
+        width: 100%;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .header-container {
+        padding: 2rem 1rem; 
+    }
+
+    .header-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .faye-photo {
+        width: 100%; 
+        height: auto; 
+    }
+
+    main {
+        max-width: 100%;
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+
+    .section {
+        padding: 2rem;
+    }
+
+    .skills-container, .experiences-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .experience-item {
+        width: 100%; 
+        max-width: 100%; 
+        padding: 1.5rem; 
+    }
+
+    .social-icon {
+        width: 40px; 
+    }
+
+    h2 {
+        font-size: 50px; 
+    }
+
+    h3 {
+        font-size: 24px; 
+    }
+
+    .skill-item h3, .experience-item h3 {
+        font-size: 20px; 
+    }
+
+    .skill-item p, .experience-item p {
+        font-size: 14px; 
+    }
+}
+

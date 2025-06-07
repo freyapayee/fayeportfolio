@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <title>Portfolio</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo">freyapayee</div> 
+        <button class="menu-button" id="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul id="nav-list">
+            <li><a href="#header">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <header class="header-container" id="header">
+        <div class="header-content">
+            <img src="faye.png" alt="Faye" class="faye-photo"/>
+            <div class="header-text">
+                <h1 class="title">
+                        Hello, It's FAYE!
+                        <span data-text="Hello, It's FAYE!"></span>
+                        <span data-text="Hello, It's FAYE!"></span>
+                </h1>
+                <p class="subtitle">JUNIOR PROGRAMMER</p>
+                <p>Hello, I'm Faye Cuevas, a second year Bachelor of Science in Computer Science Student. 
+                I have a passion for coding, problem-solving, and innovative technology. I am eager to expand my skills in software development, data structures, and algorithms. I thrive on tackling challenges and learning new concepts. Whether it's building efficient programs or diving into emerging tech trends, I'm always seeking opportunities to grow and create impactful solutions.</p>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="content">
+            <div class="section" id="skills">
+                <h2>SKILLS</h2>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <img src="graphic.png" alt="graphic" class="skill-image" />
+                        <h3>UI/UX Design (Figma)</h3>
+                        <p>I specialize in crafting intuitive, user-centric interfaces with Figma. I translate concepts into interactive designs that blend aesthetics with seamless usability.</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="adobe.png" alt="Photoshop" class="skill-image" />
+                        <h3>Graphic Editing (Photoshop & Illustrator)</h3>
+                        <p>I use Photoshop and Illustrator to refine images and create striking visuals. My approach balances technical precision with creative flair to enhance digital content.</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="vid.png" alt="Video Editing" class="skill-image" />
+                        <h3>Video Editing</h3>
+                        <p>I combine storytelling and technical editing to produce engaging videos. I focus on pacing, transitions, and visual effects that make multimedia content both captivating and impactful.</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="sql.png" alt="Database Management" class="skill-image" />
+                        <h3>Database Management (XAMPP)</h3>
+                        <p>I leverage XAMPP for setting up and managing databases to support dynamic web applications. My skills ensure efficient data handling and robust backend performance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="experiences">
+                <h2>EXPERIENCES</h2>
+                <div class="experiences-container">
+                    <div class="experience-item" style="background-image: url('ict expo.png');">
+                        <h3>NEGROS OCCIDENTAL DIGITAL CAREER EXPO</h3>
+                        <p>Attended the 2023 expo to explore emerging technological trends and connect with industry professionals.</p>
+                    </div>
+                    <div class="experience-item" style="background-image: url('dti.png');">
+                        <h3>IMMERSION AT DEPARTMENT OF TRADE AND INDUSTRY</h3>
+                        <p>Participated in a hands-on immersion program that deepened my understanding of market regulations and real-world trade practices.</p>
+                    </div>
+                    <div class="experience-item" style="background-image: url('basic web.png');">
+                        <h3>BASIC HTML-CSS WEBSITE</h3>
+                        <p>Developed a clean, responsive website using HTML and CSS, showcasing my ability to build functional digital interfaces.</p>
+                    </div>
+                    <div class="experience-item" style="background-image: url('canedustry.png');">
+                        <h3>FIGMA PROTOTYPE – "Cane Dustry"</h3>
+                        <p>Designed an interactive Figma prototype for "Cane Dustry," a sugarcane monitoring application, focusing on intuitive user experience.</p>
+                    </div>
+                    <div class="experience-item" style="background-image: url('encoder.png');">
+                        <h3>DATA ENCODER – TUTOK POLITIKA K5 NEWS FM MIDTERM ELECTIONS COVERAGE</h3>
+                        <p>Worked as a data encoder during the midterm elections coverage, ensuring accurate data management and timely reporting.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="contact">
+                <h2>CONTACT ME</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="full-name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number:</label>
+                        <input type="tel" id="mobile" name="mobile" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="social-media">
+                    <h3>Connect with me:</h3>
+                    <a href="https://web.facebook.com/faye.nanagadcuevas" target="blank">
+                        <img src="facebook.png" alt="Facebook" class="social-icon" />
+                    </a>
+                    <a href="https://www.instagram.com/freyapayee/" target="blank">
+                        <img src="instagram.png" alt="Instagram" class="social-icon" />
+                    </a>
+                    <a href="https://x.com/freyaapayee" target="blank">
+                        <img src="twitter.png" alt="X" class="social-icon" />
+                    </a>
+                    <a href="https://github.com/freyapayee" target="blank">
+                        <img src="github.png" alt="github" class="social-icon" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/faye-cuevas-ab5543358" target="blank">
+                        <img src="linkedin.png" alt="LinkedIn" class="social-icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Faye Cuevas. All rights reserved.</p>
+        </div>
+    </footer>
+<script>
+    const menuButton = document.getElementById('menu-button');
+    const navList = document.getElementById('nav-list');
+
+    menuButton.addEventListener('click', () => {
+        navList.classList.toggle('show');
+    });
+
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    const sections = document.querySelectorAll('.section');
+    const header = document.querySelector('.header-container');
+    const options = {
+        root: null,
+        threshold: 0.1,
+        rootMargin: "0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.id === 'skills') {
+                    entry.target.classList.add('skills-appear', 'fade-in');
+                } else if (entry.target.id === 'experiences') {
+                    entry.target.classList.add('experiences-appear', 'fade-in');
+                } else if (entry.target.id === 'contact') {
+                    entry.target.classList.add('contact-appear', 'fade-in');
+                } else {
+                    entry.target.classList.add('fade-in');
+                }
+            } else {
+                entry.target.classList.remove('fade-in', 'skills-appear', 'experiences-appear', 'contact-appear');
+            }
+        });
+    }, options);
+
+    const headerObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                header.classList.add('fade-in');
+            } else {
+                header.classList.remove('fade-in');
+            }
+        });
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+    headerObserver.observe(header);
+</script>
+</body>
+</html>
